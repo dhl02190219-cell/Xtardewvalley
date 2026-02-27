@@ -1,0 +1,85 @@
+@import url('https://cdn.jsdelivr.net/gh/neodgm/neodgm-webfont@latest/neodgm/style.css');
+@import "tailwindcss";
+
+@theme {
+  --font-pixel: "NeoDunggeunmo", "Galmuri9", "Press Start 2P", monospace;
+}
+
+body {
+  font-family: var(--font-pixel);
+  background-color: #fceabb;
+  background-image: linear-gradient(315deg, #fceabb 0%, #f8b500 74%);
+  color: #3e2723;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Pixel art border utility */
+.pixel-border {
+  box-shadow: 
+    inset -4px -4px 0px 0px rgba(0,0,0,0.2),
+    inset 4px 4px 0px 0px rgba(255,255,255,0.5),
+    0 0 0 4px #000;
+  border-radius: 4px;
+}
+
+.pixel-panel {
+  background-color: #f4d03f;
+  border: 4px solid #000;
+  box-shadow: 
+    inset -4px -4px 0px 0px rgba(0,0,0,0.2),
+    inset 4px 4px 0px 0px rgba(255,255,255,0.5),
+    8px 8px 0px 0px rgba(0,0,0,0.3);
+}
+
+.pixel-btn {
+  background-color: #e67e22;
+  border: 4px solid #000;
+  color: white;
+  text-shadow: 2px 2px 0 #000;
+  box-shadow: 
+    inset -4px -4px 0px 0px rgba(0,0,0,0.2),
+    inset 4px 4px 0px 0px rgba(255,255,255,0.4);
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.pixel-btn:active {
+  transform: translate(4px, 4px);
+  box-shadow: 
+    inset 4px 4px 0px 0px rgba(0,0,0,0.2),
+    inset -4px -4px 0px 0px rgba(255,255,255,0.4);
+}
+
+.pixel-btn-blue {
+  background-color: #3498db;
+}
+
+.pixel-btn-green {
+  background-color: #2ecc71;
+}
+
+.map-bg {
+  background-color: #529431;
+  background-image: 
+    linear-gradient(45deg, #478529 25%, transparent 25%, transparent 75%, #478529 75%, #478529),
+    linear-gradient(45deg, #478529 25%, transparent 25%, transparent 75%, #478529 75%, #478529);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+  image-rendering: pixelated;
+  box-shadow: inset 0 0 40px rgba(0,0,0,0.3);
+}
+
+.wood-panel {
+  background-color: #8b5a2b;
+  border: 4px solid #3e2723;
+  box-shadow: inset 0 0 0 4px #cd853f;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
