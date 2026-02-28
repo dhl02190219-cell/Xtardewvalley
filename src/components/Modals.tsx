@@ -53,7 +53,7 @@ export function NPCModal({ npc, onClose }: { npc: NPC; onClose: () => void }) {
             </div>
             
             <div>
-              <h4 className="font-bold text-base sm:text-lg mb-1 border-b-2 border-[#3e2723] pb-1">서사</h4>
+              <h4 className="font-bold text-base sm:text-lg mb-1 border-b-2 border-[#3e2723] pb-1">상세정보</h4>
               <p className="leading-relaxed">{npc.backstory}</p>
             </div>
           </div>

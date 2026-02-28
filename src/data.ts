@@ -73,7 +73,7 @@ export const npcs: NPC[] = [
   {
     id: "pierre",
     name: "피에르",
-    age: "42",
+    age: "40",
     gender: "남",
     role: "잡화점 주인",
     location: "안집 거주",
@@ -199,7 +199,7 @@ export const npcs: NPC[] = [
   {
     id: "jack",
     name: "잭",
-    age: "52",
+    age: "45",
     gender: "남",
     role: "생선 가게 주인",
     location: "해변 판잣집 거주",
@@ -255,7 +255,7 @@ export const npcs: NPC[] = [
   {
     id: "robin",
     name: "로빈",
-    age: "36",
+    age: "33",
     gender: "여",
     role: "목수",
     location: "목공소 거주",
@@ -269,7 +269,7 @@ export const npcs: NPC[] = [
   {
     id: "demetrius",
     name: "드미트리",
-    age: "38",
+    age: "30",
     gender: "남",
     role: "과학자",
     location: "목공소 지하 연구실 거주",
@@ -353,7 +353,7 @@ export const npcs: NPC[] = [
   {
     id: "marnie",
     name: "마니",
-    age: "38",
+    age: "30",
     gender: "여",
     role: "목장 주인",
     location: "목장 본채 거주",
@@ -381,7 +381,7 @@ export const npcs: NPC[] = [
   {
     id: "claire",
     name: "클레어",
-    age: "32",
+    age: "30",
     gender: "여",
     role: "지점장",
     location: "서쪽 주택 거주",
@@ -395,7 +395,7 @@ export const npcs: NPC[] = [
   {
     id: "morris",
     name: "모리스",
-    age: "34",
+    age: "32",
     gender: "남",
     role: "매니저",
     location: "서쪽 주택 거주",
