@@ -9,7 +9,7 @@ export default function LandingPage({ onEnter }: { onEnter: () => void }) {
       className="max-w-2xl w-full pixel-panel p-5 sm:p-8 relative bg-[#fdf6e3]"
     >
       <div className="text-center mb-6 sm:mb-8">
-        <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-[#e67e22] drop-shadow-[3px_3px_0_#000]">X-타듀 밸리</h1>
+        <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-[#e67e22] drop-shadow-[3px_3px_0_#000]">귀농 생활 시뮬레이터</h1>
       </div>
 
       <div className="wood-panel p-4 sm:p-6 mb-6 sm:mb-8 text-[#fdf6e3] text-base sm:text-lg leading-relaxed shadow-[8px_8px_0_rgba(0,0,0,0.3)]">
