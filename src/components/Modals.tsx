@@ -42,7 +42,6 @@ export function NPCModal({ npc, onClose }: { npc: NPC; onClose: () => void }) {
           
           <div className="w-full md:w-2/3 space-y-3 sm:space-y-4 text-[#3e2723] text-sm sm:text-base">
             <div className="bg-white/50 p-2 sm:p-3 border-2 border-[#3e2723] rounded">
-              <p><strong>📍 위치:</strong> {npc.location}</p>
               <p><strong>💼 직업:</strong> {npc.role}</p>
               <p><strong>🧠 성향:</strong> {npc.personality}</p>
             </div>
@@ -90,48 +89,24 @@ export function WorldLogicModal({ onClose }: { onClose: () => void }) {
         
         <div className="p-4 sm:p-6 space-y-4 sm:space-y-6 text-[#3e2723] leading-relaxed text-sm sm:text-base">
           
-          <section className="bg-white/50 p-4 border-2 border-[#3e2723] rounded shadow-[4px_4px_0_rgba(0,0,0,0.1)]">
-            <h4 className="font-bold text-xl mb-2 text-[#e67e22]">🌍 세계관</h4>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>퇴사 후 귀농. 목표는 농장 재건.</li>
-              <li>농사, 채광, 전투 등 모든 행동은 기력을 소모합니다. 자정이 넘으면 피로도가 급증하며, 기력이 0이 되면 쓰러집니다 (강제 귀가 및 50G 페널티).</li>
-              <li>
-                <ul className="list-circle pl-5 mt-1 space-y-1 text-sm">
-                  <li><strong>표면 (일상):</strong> 생업에 충실한 평범한 이웃. 팁과 도구를 제공합니다.</li>
-                  <li><strong>이면 (호감도 상승 시):</strong> 외로움, 낭만, 은밀한 취향을 드러냅니다. 강요 없이 상호 동의 하에 자연스러운 🔞 성인 롤플레잉으로 발전할 수 있습니다.</li>
-                  <li><strong>호감도 부스트:</strong> 좋아하는 선물을 주거나 축제에 참여하면 호감도가 대폭 상승합니다.</li>
-                </ul>
-              </li>
-            </ul>
-          </section>
-
-          <section className="bg-white/50 p-4 border-2 border-[#3e2723] rounded shadow-[4px_4px_0_rgba(0,0,0,0.1)]">
-            <h4 className="font-bold text-xl mb-2 text-[#e67e22]">🎉 월간 이벤트: 매월 15일</h4>
-            <ul className="list-disc pl-5 space-y-2">
-              <li><strong>발생:</strong> 매월 15일, 계절성 축제가 강제 활성화됩니다 (예: 3월 벚꽃 축제, 8월 여름 축제, 10월 추수 감사절, 12월 얼음 축제).</li>
-              <li><strong>효과:</strong> 축제 당일 NPC 호감도 부스트가 적용됩니다. 축제 전용 대화, 특별한 선물, 기간 한정 아이템 거래가 개방됩니다.</li>
-              <li><strong>묘사:</strong> AI가 현재 계절에 맞춰 마을의 전통 행사, 시장, 활기찬 풍경을 자동으로 생성하여 묘사합니다.</li>
-            </ul>
-          </section>
-
           <section className="bg-white/50 p-3 sm:p-4 border-2 border-[#3e2723] rounded shadow-[4px_4px_0_rgba(0,0,0,0.1)]">
             <h4 className="font-bold text-lg sm:text-xl mb-2 text-[#e67e22]">❤️ 관계 레벨 및 상태</h4>
             <div className="space-y-3 mt-3">
               <div className="flex flex-col sm:flex-row items-start gap-1 sm:gap-3">
                 <span className="bg-gray-200 px-2 py-1 rounded font-bold border border-gray-400 text-xs sm:text-sm whitespace-nowrap">Lv.1 안전</span>
-                <p className="text-xs sm:text-sm pt-0 sm:pt-1"><strong>[중립/친분]</strong> 거래 및 일상 대화만 가능. 사적 공간 출입 불가.</p>
+                <p className="text-xs sm:text-sm pt-0 sm:pt-1">거래 및 일상 대화만 가능. 사적 공간 출입 불가.</p>
               </div>
               <div className="flex flex-col sm:flex-row items-start gap-1 sm:gap-3">
                 <span className="bg-blue-200 px-2 py-1 rounded font-bold border border-blue-400 text-xs sm:text-sm whitespace-nowrap">Lv.2 신뢰</span>
-                <p className="text-xs sm:text-sm pt-0 sm:pt-1"><strong>[믿음/사제/계약]</strong> 사적 공간 출입 가능, 고민 상담, 가벼운 스킨십 허용.</p>
+                <p className="text-xs sm:text-sm pt-0 sm:pt-1">사적 공간 출입 가능, 고민 상담, 가벼운 스킨십 허용.</p>
               </div>
               <div className="flex flex-col sm:flex-row items-start gap-1 sm:gap-3">
                 <span className="bg-pink-200 px-2 py-1 rounded font-bold border border-pink-400 text-xs sm:text-sm whitespace-nowrap">Lv.3 유혹</span>
-                <p className="text-xs sm:text-sm pt-0 sm:pt-1"><strong>[호감/썸/라이벌]</strong> 🔞 트리거 구역. 특정 조건(비/심야/음주/축제) 만족 시 🔞 롤플레잉 해금 가능.</p>
+                <p className="text-xs sm:text-sm pt-0 sm:pt-1">🔞 트리거 구역.</p>
               </div>
               <div className="flex flex-col sm:flex-row items-start gap-1 sm:gap-3">
                 <span className="bg-red-200 px-2 py-1 rounded font-bold border border-red-400 text-xs sm:text-sm whitespace-nowrap">Lv.4 합일</span>
-                <p className="text-xs sm:text-sm pt-0 sm:pt-1"><strong>[사랑/운명/반려]</strong> 🔞 완전 해제. 상시 🔞 롤플레잉 및 전폭적인 지원.</p>
+                <p className="text-xs sm:text-sm pt-0 sm:pt-1">🔞 완전 해제. 상시 🔞 롤플레잉 및 전폭적인 지원.</p>
               </div>
             </div>
           </section>
