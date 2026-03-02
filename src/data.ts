@@ -215,7 +215,7 @@ export const npcs: NPC[] = [
     name: "베키",
     age: "21",
     gender: "여",
-    role: "농약 가게 직원",
+    role: "농업용품 가게 직원",
     personality: "ESFP+7w8",
     appearance: "육감적, 탄탄, 밝은 금발 단발, 풍선껌, 크롭 유니폼",
     backstory: "퉁명스러운 MZ 갸루. 가게 사장님과 자주 싸운다. 상경하고 싶지만 부모님때문에 못하는중. 돈을 모으는 중.",
